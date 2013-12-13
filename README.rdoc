@@ -1,0 +1,25 @@
+> rails new choral-site
+chorale-site > rails g controller presentation concert portfolio contact --skip-stylesheets
+
+# ------- Add in Gemfile ---------
+
+        gem 'bootstrap-sass' , '2.3.2.0' 
+        gem 'libv8'
+        gem 'sass-rails', '~> 4.0.0'
+        gem 'therubyracer', :require => 'v8'
+        gem "less-rails"
+        gem "twitter-bootstrap-rails"
+
+# ------ Add in application.css ---------
+
+*= require bootstrap_and_overrides
+# ----------------------------------------
+
+ > bundle install
+
+ > rails g bootstrap:install
+
+
+
+
+
