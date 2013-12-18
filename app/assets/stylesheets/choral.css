@@ -1,0 +1,52 @@
+html{
+	
+	background-image : url(10.jpg) ;
+	/* background-repeat: no-repeat;*/
+}
+body {
+	width: 900px;
+	height: 900px;
+	background-color: red;
+	margin-left: 150px;
+	margin-right:200px;
+	margin-top: 20px;
+}
+#link{
+	color : #E54F64;
+}
+.transbg {
+ background-color: #dde5f0;
+filter:alpha(opacity=80);
+-moz-opacity:0.8;
+-khtml-opacity: 0.8;
+opacity: 0.8;
+}
+#row-margin{
+	margin-left: 70px;
+	margin-top: 40px;
+}
+
+#carousel {
+	margin-left: 180px;
+	margin-top: 50px;
+}
+#prev {
+	margin-left: 160px;
+	margin-top: 20px;
+}
+
+#next{
+	margin-right: 200px;
+	margin-top: 20px;
+}
+
+#carousel-caption{
+	margin-right: 400px;
+}
+#carousel-indicators{
+	margin-right: 211px;
+}
+#form-connexion{
+	margin-left: 200px;
+	margin-top: 20px;
+}

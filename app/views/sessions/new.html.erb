@@ -1,0 +1,25 @@
+
+	
+
+<div class="row">
+    	<div class="span8" id = "form-connexion" >
+    		
+    		<h6>Merci de vous connecter</h6>
+             <%= form_for(:session, :url => sessions_path) do |f| %>
+        
+                
+                <%= f.label :email, "Identifiant" %> 
+                <%= f.text_field :email %>
+                <%= f.label :password, "Mot de passe" %>
+                <%= f.password_field :password %> <br>
+                <%= f.submit "Se connecter", :disable_with => 'Submiting...' %>
+        
+            <% end %>
+
+    	</div>
+    	<div class="span2">
+    		
+
+    	</div>
+    </div>
+

@@ -1,7 +1,13 @@
 ChoralSiteV1::Application.routes.draw do
-  get "presentation/concert"
-  get "presentation/portfolio"
-  get "presentation/contact"
+  get "membres/new"
+  get "app/presentation"
+  get "app/concert"
+  get "app/portfolio"
+  get "app/contact"
+  root 'app#presentation'
+  resources :sessions, :only => [:new, :create, :destroy]
+  match '/signin',  :to => 'sessions#new',         :via => 'get'
+  match '/signout', :to => 'sessions#destroy',     :via => 'delete'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

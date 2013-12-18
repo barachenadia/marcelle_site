@@ -43,9 +43,17 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-        gem 'bootstrap-sass' , '2.3.2.0' 
-        gem 'libv8'
-        gem 'sass-rails', '~> 4.0.0'
-        gem 'therubyracer', :require => 'v8'
-        gem "less-rails"
-        gem "twitter-bootstrap-rails"
+
+# ----- Tous les gems ajoutés dans ce projet
+		#--hash function called bcrypt 
+            gem 'bcrypt-ruby', '3.1.2'
+           
+         #--Bootstrap
+        	gem 'bootstrap-sass' , '2.3.2.0' 
+        	gem 'libv8'
+        	gem 'sass-rails', '~> 4.0.0'
+        	gem 'therubyracer', :require => 'v8'
+        	gem "less-rails"
+        	gem "twitter-bootstrap-rails"
+        
+# ----- Tous les gems ajoutés dans ce projet
