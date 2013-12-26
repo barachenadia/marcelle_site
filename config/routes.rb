@@ -1,5 +1,12 @@
 ChoralSiteV1::Application.routes.draw do
+  resources :activites
+  get "app/setting_page"
+  get "activites/index"
+  get "activites/show"
+  get"activites/new"
   get "membres/new"
+
+  get "app/activites"
   get "app/presentation"
   get "app/concert"
   get "app/portfolio"

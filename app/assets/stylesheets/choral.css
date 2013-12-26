@@ -1,52 +1,53 @@
-html{
-	
-	background-image : url(10.jpg) ;
-	/* background-repeat: no-repeat;*/
-}
+html{background-image : url(f.jpg) ;
+	/* background-repeat: no-repeat;*/}
 body {
 	width: 900px;
 	height: 900px;
-	background-color: red;
+	/*background-color: #D51F22;*/
 	margin-left: 150px;
 	margin-right:200px;
 	margin-top: 20px;
 }
-#link{
-	color : #E54F64;
-}
+#link {color : #debc54; }
 .transbg {
- background-color: #dde5f0;
-filter:alpha(opacity=80);
--moz-opacity:0.8;
--khtml-opacity: 0.8;
-opacity: 0.8;
+ background-color: #ffffff;
+filter:alpha(opacity=70);
+-moz-opacity:0.7;
+-khtml-opacity: 0.7;
+opacity: 0.7;
 }
-#row-margin{
-	margin-left: 70px;
-	margin-top: 40px;
-}
+#row-margin{ margin-left: 70px;margin-top: 40px;}
 
-#carousel {
-	margin-left: 180px;
-	margin-top: 50px;
-}
-#prev {
-	margin-left: 160px;
-	margin-top: 20px;
-}
+#carousel {margin-left: 180px; margin-top: 50px;}
 
-#next{
-	margin-right: 200px;
-	margin-top: 20px;
-}
+#prev {margin-left: 160px; margin-top: 20px;}
 
-#carousel-caption{
-	margin-right: 400px;
-}
-#carousel-indicators{
-	margin-right: 211px;
-}
-#form-connexion{
-	margin-left: 200px;
-	margin-top: 20px;
-}
+#next{margin-right: 200px;margin-top: 20px;}
+
+#carousel-caption{margin-right: 400px;}
+
+#carousel-indicators{margin-right: 211px;}
+
+#form-connexion{margin-left: 200px;margin-top: 20px;}
+
+#activite{margin-left: 95px;margin-top: 40px;}
+
+#content{margin-left: 10px;}
+
+#icon {color : #debc54; margin-left: 362px;}
+
+#icon1 {color : #debc54;}
+
+#date{margin-left: 25px;}
+
+#title{color : #D51F22;}
+#all-activites{margin-left: 70px; }
+#icon_mod{color :red;}
+#line-margin {margin-left: 400px}
+
+/*formulaire activité/new*/
+
+#form_new { margin-left: 300px;}
+#form_new_titre { margin-left:   264px}
+#margin_new {margin-left: 616px;}
+#border_vertical { height: 50px;  margin-top: 50px; border-right: 3px solid  #2AB364;}

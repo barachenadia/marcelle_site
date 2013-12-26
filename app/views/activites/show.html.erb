@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+<div style ="margin-left : 46px">
+	<h2> <%= @activite.title %></h2>  
+  
+    <h6><%= @activite.content %></h6>
+</div>
+
+
+<strong id ="icon_mod" > <i class=" icon-edit" style ="margin-left : 616px;"></i> | <%= link_to 'Modifier', edit_activite_path(@activite) %> | </strong>
+<strong id ="icon_mod"> <i class=" icon-repeat" ></i> <%= link_to 'Tous les activités', activites_path %> |</strong>

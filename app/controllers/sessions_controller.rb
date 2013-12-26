@@ -8,7 +8,8 @@ class SessionsController < ApplicationController
     if membre && membre.authenticate(params[:session][:password])
       # Sign the user in and redirect to the user's show page.
       sign_in membre
-      redirect_to root_path
+      #redirect_to root_path
+      redirect_to app_setting_page_path
     else
        flash.now[:error] = 'Invalid email/password combination'
        render 'new' 

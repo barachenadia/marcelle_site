@@ -1,0 +1,58 @@
+
+<br><br>
+<div class="row">
+  <div class="span7" id = "all-activites">
+    <% if signed_in? %>
+    
+    <h4 id ="icon_mod" > <i class=" icon-plus"></i>  <%= link_to 'Ajouter une nouvelle acitvité', new_activite_path %></h4>
+    <br>
+<h1>Liste des activités</h1>
+    
+    <% @activites.each do |activite| %>
+      
+       
+       <h2><%= activite.title %> </h2>  
+        <h6><%= activite.content %></h6> 
+
+       <strong id ="icon_mod"> <i class=" icon-eye-open" id ="line-margin"></i>  <%= link_to 'Voir', activite %> |</strong>
+        <strong id ="icon_mod"> <i class=" icon-edit"></i> <%= link_to 'Modifier', edit_activite_path(activite) %> |</strong>
+        <strong id ="icon_mod"><i class="icon-trash "></i> <%= link_to 'Supprimer', activite, method: :delete, data: { confirm: 'Vous etes sur ?' } %> |</strong>
+      
+    <% end %>
+
+
+  </div>
+</div>
+
+
+<% else %>
+
+
+<div class="row">
+  <div class="span6" id="activite">
+   
+    
+    <% @activites.each do |activite| %>
+    <br>
+    <i class="icon-star" id = "icon"></i>
+    <i class="icon-star" id = "icon1"></i>
+    <i class="icon-star" id = "icon1"></i>
+    <i class="icon-star" id = "icon1"></i>
+      <h1 id ="title"><%= activite.title %></h1> 
+      <h6 id="content"><%= activite.content %></h6>
+<!-- mise à jour <%= time_ago_in_words(activite.created_at) %> ag -->
+     <p id ="date">Posté <%= time_tag(activite.created_at) %> </p> 
+<% end -%>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<% end -%>
+
+

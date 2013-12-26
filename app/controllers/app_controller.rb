@@ -10,4 +10,9 @@ class AppController < ApplicationController
 
   def contact
   end
+  def activites
+  end
+  def index
+  	 
+  end 
 end
