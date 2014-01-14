@@ -1,7 +1,7 @@
 <% if signed_in? %>
 <div class="navbar navbar-inverse ">
     <div class="navbar-inner" >
-          <a class="brand"  id = "link"> Choral Coeur & joie</a>
+          <a class="brand"  id = "link"> Choral Choeur & joie</a>
             <ul class="nav pull-right" >
                  
                  <ul class="nav nav-pills">
@@ -9,13 +9,15 @@
                          <a class="dropdown-toggle" data-toggle="dropdown" href="" id = "link"> Réglages <b class="caret"></b></a>
                           <ul class="dropdown-menu">
                                 <li><a > <%= link_to "Activité-setting", new_activite_path %></a></li>
-                                <li><a href="">Evénément-setting</a></li>
+                                <li><a > <%= link_to "Evénément-setting", paintings_new_path %></a></li>
+                                
                                 <li><a href="">Porfolio-setting</a></li>
    
                           </ul>
                        </li>
                  </ul>
                 <li id = "link"><%= link_to "Déconnexion", signout_path, method: "delete" %></li>  
+
 
            </ul> 
     </div>
@@ -31,7 +33,7 @@
     <a class="dropdown-toggle" data-toggle="dropdown" href="" id = "link"> Presentation <b class="caret"></b></a>
     <ul class="dropdown-menu">
     <li><a ><%= link_to "Activité", activites_path %></a></li>
-    <li><a href="">Les membres du bureau</a></li>
+    <li> <a ><%= link_to "Les membres du bureau", app_membrebureau_path %></li>
     <li><a href="">Les adhérent</a></li>
     <li> <%= link_to "Espace membre", signin_path %></li>
    
@@ -40,8 +42,8 @@
     </ul>
 
 
-    <li ><a href="#" id = "link">Evénement</a></li>
-
+<li><%= link_to "Evénement", paintings_index_path %></li>
+    
 
     <ul class="nav nav-pills">
     <li class="dropdown">

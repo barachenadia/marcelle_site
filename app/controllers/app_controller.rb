@@ -12,7 +12,8 @@ class AppController < ApplicationController
   end
   def activites
   end
-  def index
-  	 
+  def index	 
   end 
+  def membrebureau
+  end
 end

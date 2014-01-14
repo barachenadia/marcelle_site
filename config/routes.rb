@@ -1,11 +1,17 @@
 ChoralSiteV1::Application.routes.draw do
+   resources :paintings, only: [:index, :new, :create, :destroy]
+  get "paintings/index"
+  get "paintings/new"
+  get "paintings/create"
+  get "paintings/destroy"
   resources :activites
   get "app/setting_page"
   get "activites/index"
   get "activites/show"
-  get"activites/new"
+  get "activites/new"
   get "membres/new"
-
+  
+  get "app/membrebureau"
   get "app/activites"
   get "app/presentation"
   get "app/concert"

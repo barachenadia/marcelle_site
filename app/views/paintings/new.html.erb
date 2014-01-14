@@ -1,0 +1,28 @@
+    <div class="row">
+    <div class="span8">
+    		<% if !@painting.errors.empty? %>
+    <div class="alert alert-error">
+    <ul>
+   <% @painting.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+    </ul>
+    </div>
+    <% end %>
+   <div class="well" id="newaffiche">
+   <h3 id ="icon_mod">  <i class=" icon-plus"></i> Ajouter une nouvelle affiche </h3> 
+    <%= form_for @painting, html: { multipart: true } do |f| %>
+    <%= f.label :Titre_affiche %> 
+    <%= f.text_field :name %><br>
+    <%= f.label :laffiche %>
+    <%= f.file_field :image %> <br><br>
+    <%= f.submit "Save", class: "btn btn-primary" %>
+    <% end %>
+    <strong id ="icon_mod_aff_new"> <i class=" icon-eye-open" id ="line-margin-new"></i><%= link_to "Voir tous les affiches", paintings_index_path %> </strong>
+    </div>
+
+    	</div>
+    </div>
+
+
+    

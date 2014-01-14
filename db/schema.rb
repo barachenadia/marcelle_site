@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131218101613) do
+ActiveRecord::Schema.define(version: 20140107182330) do
 
   create_table "activites", force: true do |t|
     t.string   "title"
@@ -31,5 +31,12 @@ ActiveRecord::Schema.define(version: 20131218101613) do
 
   add_index "membres", ["email"], name: "index_membres_on_email", unique: true
   add_index "membres", ["remember_token"], name: "index_membres_on_remember_token"
+
+  create_table "paintings", force: true do |t|
+    t.string   "name"
+    t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

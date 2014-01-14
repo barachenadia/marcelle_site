@@ -1,0 +1,54 @@
+    <div class="row">
+    	<div class="span8" style ="margin-left : 306px">
+    		<% if !flash[:notice].blank? %>
+    
+    <% end %>
+    <br />
+    
+    <br />
+    <br />
+    
+    
+    
+
+
+     
+      <% @paintings.each do |resume| %>
+
+      <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          <%= resume.name %>
+        </a>
+      </h3>
+    </div>
+
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <%= image_tag resume.image_url(:thumb) if resume.image? %>
+      </div>
+    </div>
+  </div>
+  
+  
+    </div>
+   
+      
+    <% if signed_in? %>
+<br><br>
+    <%= button_to "Delete", resume, method: :delete, class: "btn btn-danger", confirm: "Voulez vraiment supprimer l'affiche #{resume.name}?" %>
+    <strong id ="icon_mod_aff_new"> <i class=" icon-eye-open"></i> <%= link_to "Ajouter une nouvelle affiche ", paintings_new_path %> </strong>
+    <% else %>
+   <% end -%>
+
+
+    <% end %>
+   
+
+
+   </div>
+   </div>
+
+    

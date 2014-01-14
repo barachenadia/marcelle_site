@@ -2,20 +2,20 @@ html{background-image : url(f.jpg) ;
 	/* background-repeat: no-repeat;*/}
 body {
 	width: 900px;
-	height: 900px;
+	/*height: 900px;*/
 	/*background-color: #D51F22;*/
 	margin-left: 150px;
 	margin-right:200px;
 	margin-top: 20px;
 }
 #link {color : #debc54; }
-.transbg {
+/*.transbg {
  background-color: #ffffff;
 filter:alpha(opacity=70);
 -moz-opacity:0.7;
 -khtml-opacity: 0.7;
 opacity: 0.7;
-}
+}*/
 #row-margin{ margin-left: 70px;margin-top: 40px;}
 
 #carousel {margin-left: 180px; margin-top: 50px;}
@@ -47,7 +47,14 @@ opacity: 0.7;
 
 /*formulaire activité/new*/
 
-#form_new { margin-left: 300px;}
+#form_new { margin-left: 80px;}
 #form_new_titre { margin-left:   264px}
 #margin_new {margin-left: 616px;}
 #border_vertical { height: 50px;  margin-top: 50px; border-right: 3px solid  #2AB364;}
+#membrebureau{margin-top: 80px; margin-left: -13px}
+#membrebureau1{; margin-left: -13px}
+#icon-membre {color : #debc54; margin-left: 300px;}
+#title-membre{ margin-left: 300px; color : #D51F22;}
+#icon_mod_aff_new{color :red; margin-left:375px;}
+#newaffiche{margin-left: 90px;}
+#line-margin-new{margin-left:121px; }
